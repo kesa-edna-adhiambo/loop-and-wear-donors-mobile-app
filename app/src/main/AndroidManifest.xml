@@ -12,6 +12,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoopandWear"
         tools:targetApi="31">
+
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".SuccessfulDonation"
+            android:exported="false" />
+        <activity
+            android:name=".RequestPickUp"
+            android:exported="false" />
+        <activity
+            android:name=".DropOff"
+            android:exported="false" />
+        <activity
+            android:name=".HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".JoinAs"
+            android:exported="false" />
+        <activity
+            android:name=".Sign_up"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

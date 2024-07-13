@@ -1,4 +1,6 @@
 package com.example.loop_and_wear;
 
-public class SignUp {
+import android.app.Activity;
+
+public class SignUp extends Activity {
 }
