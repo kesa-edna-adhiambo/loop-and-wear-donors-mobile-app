@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RequestPick_up">
+    tools:context=".RequestPickUp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/etpickup"
+            android:id="@+id/atpickup"
             android:layout_width="352dp"
             android:layout_height="64dp"
             android:layout_marginStart="1dp"
@@ -34,6 +34,7 @@
             android:layout_marginEnd="1dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:inputType="text"
             app:layout_constraintTop_toBottomOf="@+id/textView3">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -41,7 +42,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#F2E5DD"
-                android:hint="Enter Pick-up Address" />
+                android:hint="Enter Pick-up Address"
+                android:inputType="text"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <CheckBox
@@ -52,6 +54,7 @@
             android:layout_marginTop="48dp"
             android:layout_marginEnd="325dp"
             android:text="1-10"
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView17" />
@@ -88,7 +91,7 @@
             android:layout_height="52dp"
             android:layout_marginStart="142dp"
             android:layout_marginEnd="178dp"
-            android:layout_marginBottom="100dp"
+            android:layout_marginBottom="128dp"
             android:text="Next"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -108,7 +111,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.147"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etpickup"
+            app:layout_constraintTop_toBottomOf="@+id/atpickup"
             app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

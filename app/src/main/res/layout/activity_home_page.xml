@@ -9,8 +9,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteX="-50dp"
+        tools:layout_editor_absoluteY="-16dp">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -29,11 +29,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="13dp"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="270dp"
             android:text="Hello Mario!"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
             tools:ignore="HardcodedText,MissingConstraints" />
@@ -43,9 +44,8 @@
             android:layout_width="382dp"
             android:layout_height="213dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="29dp"
+            android:layout_marginBottom="36dp"
             android:background="#F2E5DD"
             app:layout_constraintBottom_toTopOf="@+id/etAbout"
             app:layout_constraintEnd_toEndOf="parent"
@@ -55,8 +55,8 @@
 
             <TextView
                 android:id="@+id/etIntroText"
-                android:layout_width="214dp"
-                android:layout_height="108dp"
+                android:layout_width="350dp"
+                android:layout_height="89dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="40dp"
                 android:text="Revive,reimagine and reuse the art of upcycling for your garments"
@@ -81,7 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
             android:text="About Loop And Wear"
             android:textSize="24sp"
@@ -94,33 +94,18 @@
 
         <TextView
             android:id="@+id/etActualtext"
-            android:layout_width="374dp"
-            android:layout_height="79dp"
+            android:layout_width="378dp"
+            android:layout_height="136dp"
             android:layout_marginStart="52dp"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="19dp"
-            android:layout_marginBottom="40dp"
-            android:text="Loop And Wear Aims to connect donors with upcycling companires promoting a more circular lifestyle and reducing waste"
+            android:text="Loop And Wear Aims to connect donors with upcycling companires promoting a more circular lifestyle and reducing waste. It also ensures that there is continuous supply of raw matirials for the upcycling company which in this case is second hand clothes."
             android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/imDonate"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.947"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etAbout"
             tools:ignore="HardcodedText,TextSizeCheck" />
-
-        <ImageView
-            android:id="@+id/imhome"
-            android:layout_width="45dp"
-            android:layout_height="38dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/textView2"
-            app:layout_constraintHorizontal_chainStyle="spread"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etActualtext"
-            app:layout_constraintVertical_bias="0.99"
-            app:srcCompat="@drawable/home"
-            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -140,21 +125,33 @@
             android:id="@+id/imDonate"
             android:layout_width="42dp"
             android:layout_height="41dp"
-            android:layout_marginStart="52dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
             app:layout_constraintHorizontal_chainStyle="spread"
-            app:layout_constraintStart_toEndOf="@+id/imhome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imreward"
             app:srcCompat="@drawable/heart"
             tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvDon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="Donate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imDonate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imDonate" />
 
         <ImageView
             android:id="@+id/imreward"
             android:layout_width="45dp"
             android:layout_height="44dp"
-            android:layout_marginStart="52dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/textView11"
+            android:layout_marginStart="124dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tvDon"
             app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toEndOf="@+id/imDonate"
             app:srcCompat="@drawable/points"
@@ -165,63 +162,55 @@
             android:layout_width="39dp"
             android:layout_height="42dp"
             android:layout_marginStart="32dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/textView14"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.309"
+            app:layout_constraintHorizontal_bias="0.743"
             app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toEndOf="@+id/imreward"
+            app:layout_constraintTop_toTopOf="@+id/imreward"
             app:srcCompat="@drawable/profile"
             tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="42dp"
-            android:layout_height="17dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginBottom="100dp"
-            android:text="Home"
-            android:textColor="#0B0101"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="HardcodedText" />
-
-        <TextView
-            android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="52dp"
-            android:layout_marginBottom="100dp"
-            android:text="Donate"
-            android:textColor="#070000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
-            tools:ignore="HardcodedText" />
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="52dp"
-            android:layout_marginBottom="100dp"
-            android:text="Reward"
-            android:textColor="#100101"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView4"
-            tools:ignore="HardcodedText" />
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="52dp"
-            android:layout_marginEnd="48dp"
-            android:layout_marginBottom="100dp"
-            android:text="Profile"
-            android:textColor="#130101"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="225dp"
+            android:layout_marginBottom="21dp"
+            android:text="Get To"
+            android:textColor="#090000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/imDonate"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView11"
-            tools:ignore="HardcodedText" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etActualtext"
+            app:layout_constraintVertical_bias="0.571" />
+
+        <TextView
+            android:id="@+id/tvSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="Save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imreward"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imreward"
+            app:layout_constraintTop_toBottomOf="@+id/imreward"
+            app:layout_constraintVertical_bias="0.941" />
+
+        <TextView
+            android:id="@+id/tvProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="Create Profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imContact"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="@+id/imContact" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
